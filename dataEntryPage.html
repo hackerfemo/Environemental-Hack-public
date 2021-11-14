@@ -1,0 +1,85 @@
+<html>
+
+<head>
+  <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+  <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+
+  <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+  <script defer src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
+
+  <script defer src="./init-1-firebase.js"></script>
+  <script defer src="./script.js"></script>
+</head>
+
+<body style="background-color: rgb(74, 156, 92)">
+  <!-- Firebase guides -->
+  <!-- https://firebase.google.com/docs/web/learn-more#ways-to-add-web-sdks -->
+  <!-- https://firebase.google.com/docs/web/learn-more?authuser=0#additional-setup-options -->
+  <!-- https://github.com/firebase/firebaseui-web#example-with-all-parameters-used -->
+  <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" />
+  <link type="text/css" rel="stylesheet" href="style.css" />
+
+  <div id="header">
+    <div>
+      <image id="logo" src="/HackerfemoLogo.jpg" width="75px" height="75px" />
+    </div>
+    <div>
+      <h1>Femi's Environmental Hack</h1>
+    </div>
+  </div>
+
+  <div id="dataInputForm">
+    <div id="numPeopleInput">
+      <label for="numPeople">Number of people:</label><br>
+      <input id="numPeople" type="number" min="0" max="200"><br>
+    </div>
+    <br>
+    <div id="CO2Input">
+      <div id="sensorInput">
+        <h4>Sensor 1</h4>
+        <label for="CO21">CO2 value:</label><br>
+        <input id="CO21" type="number" min="400" max="4000"><br>
+        <br>
+      </div>
+      <div id="sensorInput">
+        <h4>Sensor 2</h4>
+        <label for="CO22">CO2 value:</label><br>
+        <input id="CO22" type="number" min="400" max="4000"><br>
+        <br>
+      </div>
+      <div id="sensorInput">
+        <h4>Sensor 3</h4>
+        <label for="CO23">CO2 value:</label><br>
+        <input id="CO23" type="number" min="400" max="4000"><br>
+        <br>
+      </div>
+      <div id="sensorInput">
+        <h4>Sensor 4</h4>
+        <label for="CO24">CO2 value:</label><br>
+        <input id="CO24" type="number" min="400" max="4000"><br>
+        <br>
+      </div>
+      <div id="lastSensorInput">
+        <h4>Sensor 5</h4>
+        <label for="CO25">CO2 value:</label><br>
+        <input id="CO25" type="number" min="400" max="4000"><br>
+        <br>
+      </div>
+    </div>
+    <br>
+    <p id="errorMessage"></p>
+    <input id="submit" type="button" value="Submit" onclick="submitData()"><br>
+    <br />
+  </div>
+  <hr />
+  <div id="footer">
+    <br>
+    <div>
+      <image id="bllogo" src="/BrillLabsLogo.png" width="100px" height="40px" />
+    </div>
+  </div>
+</body>
+
+</html>

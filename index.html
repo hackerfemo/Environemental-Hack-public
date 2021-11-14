@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
+    <script defer src="./init-1-firebase.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@^2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment@^1"></script>
+
+    <script defer src="./COPData.js"></script>
+    <script defer src="./SatData.js"></script>
+    <script defer src="./SunData.js"></script>
+    <script defer src="./TateData.js"></script>
+    <script defer src="./graphs.js"></script>
+    <script defer src="./script.js"></script>
+</head>
+
+<body style="background-color: rgb(74, 156, 92)">
+    <!-- https://firebase.google.com/docs/web/learn-more#ways-to-add-web-sdks -->
+    <!-- https://firebase.google.com/docs/web/learn-more?authuser=0#additional-setup-options -->
+    <!-- https://github.com/firebase/firebaseui-web#example-with-all-parameters-used -->
+
+    <link type="text/css" rel="stylesheet" href="style.css" />
+
+    <div id="header">
+        <div>
+            <image id="logo" src="/HackerfemoLogo.jpg" width="75px" height="75px" />
+        </div>
+        <div>
+            <h1>Femi's Environmental Hack</h1>
+        </div>
+    </div>
+    <div id="graphScreen">
+        <div>
+            <canvas id="myChart"></canvas>
+        </div>
+        <!-- Uncomment these lines to read data from your own Firebase collection -->
+        <!-- <div>
+            <input type="button" value="show graph" onclick="readDocsButtonPressed()" />
+        </div> -->
+        <br>
+        <div id="toggleData">
+            <label for="dataSelect">Dataset:</label>
+            <select name="dataSelect" id="dataSelect">
+                <option value="COPData">COP26 Data</option>
+                <option value="SatData">Tate Modern Saturday Data</option>
+                <option value="SunData">Tate Modern Sunday Data</option>
+                <option value="TateData">Complete Tate Modern Data</option>
+                <!-- <option value="BboardData">Bboard Data</option> -->
+            </select>
+            <input type="button" id="toggleDataButton" value="set dataset" onclick="toggleData()" />
+        </div>
+        <div>
+            <label for="graphSelect">Graph type:</label>
+            <select name="graphSelect" id="graphSelect">
+                <option value="doubleLineGraph">Double Line Graph</option>
+                <option value="bubbleGraph">Bubble Graph</option>
+                <option value="CO2LineGraph">CO2 Line Graph</option>
+                <option value="scatterGraph">Scatter Graph</option>
+            </select>
+            <input type="button" value="change graph" onclick="generateGraph()" />
+        </div>
+    </div>
+    <hr />
+    <div id="footer">
+        <br>
+        <div>
+            <image id="bllogo" src="/BrillLabsLogo.png" width="100px" height="40px" />
+        </div>
+    </div>
+</body>
+
+</html>

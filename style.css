@@ -1,0 +1,85 @@
+#myChart {
+    border: 2px solid blue ;
+    border-radius: 5px;
+}
+h1 {
+  font-size: 60px;
+  text-align: center;
+  font-family: 'Times New Roman', serif;
+  color: white;
+  padding-top: 5%;
+}
+#dataInputForm {
+  background-color: white ;
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 2px solid white ;
+  border-radius: 20px;
+  padding-block: 10px;
+  padding-inline: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+#CO2Input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#sensorInput{
+  padding-inline: 20px;
+  border-right: 2px solid black;
+}
+#lastSensorInput {
+  padding-inline: 20px;
+}
+hr {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+div {
+  text-align: center;
+}
+#errorMessage {
+  color: red;
+  font-size: small;
+}
+#footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#logo {
+  padding-top: 20px;
+  padding-inline: 20px;
+}
+#graphScreen{
+  background: white;
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 2px solid white ;
+  border-radius: 20px;
+  padding-block: 10px;
+  padding-inline: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+#header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#bllogo{
+  background-color: white;
+  padding-inline: 20px;
+  padding-block: 10px;
+}
+#nav {
+  width: 15%;
+  height: 5%;
+  font-size: 100%;
+}
+label {
+  font-size: 20;
+}
