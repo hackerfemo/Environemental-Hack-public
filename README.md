@@ -1,4 +1,6 @@
 # Environemental Hack public
+
+###### This Source Code is subject to the terms of the Mozilla Public License, v. 2.0.
  
 HTML, CSS and Javascript code repo for Femi's Environmental Hack.
 
